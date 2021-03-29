@@ -15,7 +15,7 @@ export class FormDemoComponent implements OnInit {
   myForm: FormGroup;
   constructor(fb: FormBuilder) {
     this.myForm = fb.group({
-      'sku': ['ABC123', Validators.required], 'price':[100.00], 'url':['http://www.prova.com']
+      'sku': ['ABC123', Validators.required], 'price':[100.00, Validators.required], 'url':['http://www.prova.com', Validators.required]
     });
   }
   ngOnInit() {
